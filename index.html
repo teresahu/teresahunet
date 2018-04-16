@@ -5,14 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/uikit.css" />
+        <link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
-      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+      <nav id="nav" class="uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-left">
-           <a href="" class="uk-navbar-item uk-logo">.
+           <a href="index.html" class="uk-navbar-item uk-logo">
+             <img src="images/logo-2.png" width="48px" id="logo">
            </a>
          </div>
          <div class="uk-navbar-right">
@@ -27,6 +28,7 @@
                     </ul>
                   </div>
                 </li> -->
+                <li class="uk-parent"><a href="casestudy.html">case study</a></li>
                 <li class="uk-parent"><a href="about.html">about</a></li>
             </ul>
         </div>
@@ -35,68 +37,83 @@
     <div class="uk-container uk-width-5-6" id="resume">
       <div class="uk-flex uk-flex-left">
         <h1><strong>TERESA</strong> HU</h1>
+        <h4> [ UX designer ]</h4>
       </div>
+
       <div class="uk-grid">
         <div class="uk-width-1-3@s uk-width-1-3@m uk-width-1-4@l uk-margin-right">
           <h2>EDUCATION</h2>
-          <h3>Georgia Institute of Technology</h3>
+          <section class="uk-margin">
+            <h3>Georgia Institute of Technology</h3>
             Bachelor of Science 2015<br/>
             Computer Science<br/>
-            People x Media (HCI) Focus*<br/>
+            People x Media (HCI) Focus<span class="uk-text-meta">*</span><br/>
 
             <h3>Oxford University</h3>
             Worcestor College<br/>
             Study abroad 2010 <br/>
-          
-          <h2>SKILLS</h2>
-          <h3>UX</h3>
-          Data visualization, Heuristic evaluation, Interaction design, Mood boards, Prototyping, Responsive design, Storyboarding, Usability testing, User research, Wireframing
+          </section>
 
-          <h3>Tools</h3>
-          Sketch, InVision, Illustrator, Photoshop, Balsamiq
+          <section class="uk-margin-large">
+            <h2>SKILLS</h2>
+            <h3>UX</h3>
+            Data visualization, Heuristic evaluation, Interaction design, Mood boards, Prototyping, Responsive design, Storyboarding, Usability testing, User research, Wireframing
 
-          <h3>Technical</h3>
-          HTML5, CSS3, SASS, JavaScript, mongoDB, mySQL, Ruby on Rails, Git, Wordpress
+            <h3>Tools</h3>
+            Sketch, InVision, Illustrator, Photoshop, Balsamiq
 
-          <h3>Languages</h3>
-          Fluent in Chinese Mandarin <br/>
-          Conversational Taiwanese
+            <h3>Technical</h3>
+            HTML5, CSS3, SASS, JavaScript, mongoDB, mySQL, Ruby on Rails, Git, Wordpress
 
+            <h3>Languages</h3>
+            Fluent in Chinese Mandarin <br/>
+            Conversational Taiwanese
+          </section>
         </div>
         <div class="uk-width-3-5@s uk-width-3-5@m uk-width-3-5@l">
           <h2>EXPERIENCE</h2>
 
-          <h3>ECHOUSER | UX Designer</h3>
-          <h4>JUL 2017 — PRESENT | SAN FRANCISCO, CA</h4>
-          Designing web and mobile experiences; utilizing a human-centered design process. Work incorporates problem space definition, wireframing, animation, user research, usability testing, high-fidelity mockups, presenting to stakeholders, and working with PMs, engineers, and sales to ensure quality, timely delivery.
-          <br/>
-          <em>Clients include: Mulesoft, VMWare, Google</em>
+          <section class="uk-margin">
+            <h3>EchoUser | Design Technologist</h3>
+            <h4>NOV 2015 — PRESENT | SAN FRANCISCO, CA</h4>
+            Designing web and mobile experiences; utilizing a human-centered design process.
+            <br/>Work incorporates problem space definition, wireframing, animation, user research, usability testing, high-fidelity mockups, presenting to stakeholders, and working with PMs, engineers, and sales to ensure quality, timely delivery.<br/>
+            Coded interactive prototypes, proof of concepts, and modular front-end components for clients.
+            <br/>Independently invented new design-development process, which increased project efficiency by 50%.
+            <br/>Managed 2 partner engineers.
+            <br/><br/>
+            <em>Clients include: Mulesoft, VMWare, Google, Crimson Hexagon, <a href="ggogle.com">EllieMae</a>, <a href="">General Electric</a></em>
+          </section>
 
-          <h3>ECHOUSER | UX Engineer</h3>
-          <h4>NOV 2015 — JUL 2017 | SAN FRANCISCO, CA</h4>
-          Coded interactive prototypes, proof of concepts, and modular front-end components for clients. Independently invented new design-development process, which increased project efficiency by 50%. Managed 2 partner engineers.
-          <br/>
-          <em>Clients include: Google, Crimson Hexagon, EllieMae, General Electric</em>
-
+          <section class="uk-margin">
           <h3>Microsoft | Program Manager Intern</h3>
           <h4>MAY 2013 — AUG 2013 | REDMOND, WA</h4>
-          Owned Remote Desktop app product requirements doc. Prototyped mobile interactions and presented to 30 stakeholders.
+          Owned Remote Desktop app product requirements document. 
+          Prototyped mobile interactions and presented to 30 stakeholders.
+          </section>
 
+          <section class="uk-margin">
           <h3>Ericsson | Software Developer Intern</h3>
           <h4>JAN 2013 — MAY 2014 | DULUTH, GA</h4>
           Drove UX initiative: established component library and motivated team-wide adoption.  Fixed 120 UI bugs in a TDD environment.
+          </section>
 
+
+          <section class="uk-margin">
           <h3>Cisco | Software Engineer Intern </h3>
           <h4>MAY 2012 — AUG 2012 | SAN JOSE, CA</h4>
           Completed Scrum Master training.
           Supported PM in implementing Agile methodologies.
+          </section>
         </div>
       </div>
-      <br/>
-      <div class="uk-text-meta">* Coursework includes: UI Design, Research Methods, Information Visualization, Mobile Apps & Services</div>
+      <br/><br/>
+      <div class="uk-text-meta">* Coursework includes: UI Design, Research Methods, Information Visualization, Mobile Apps & Services, Computer Graphics</div>
     </div>
+    <br/>
     <div class="uk-flex uk-flex-center">
-      <a class="uk-position-medium uk-position-absolute" href="" uk-totop></a>
+      <a href="#logo" class="uk-position-medium uk-position-absolute" uk-scroll uk-totop> </a>
     </div>
+    <br/>
   </body>
 </html>

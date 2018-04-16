@@ -43,6 +43,49 @@ table {
 	border-spacing: 0;
 }
 */
+
+/*em > a {
+  color: rgba(80, 82, 144, .8);
+  text-decoration: underline;
+}
+em > a:hover{
+  color: rgba(80, 82, 144, 1);
+  text-decoration: none;
+}
+em > a:visited{
+  color: rgba(80, 82, 144, .8);
+  text-decoration: underline;
+}*/
+
+em > a {
+  background-color: rgba(80, 82, 144, .8);
+  color: #fff;
+}
+em > a:hover{
+  text-decoration: line-through;
+  background-color: rgba(80, 82, 144, .65);
+  color: #fff;
+}
+em > a:visited {
+  background-color: rgba(80, 82, 144, .8);
+  color: #fff;
+  font-weight: bold;
+}
+
+.uk-navbar {
+  padding: 0 1em;
+}
+
+.uk-navbar-nav > li > a {
+  font-family: "Avenir", "Helvetica Neue", Arial, sans-serif !important;
+  color: rgba(80, 82, 144, .8) !important;
+}
+
+.uk-navbar-nav > li > a:hover {
+  color: rgba(80, 82, 144, .65) !important;
+  text-decoration: line-through;
+}
+
 .ml5 {
   position: relative;
   font-weight: 300;
@@ -97,23 +140,24 @@ table {
 
 #resume {
   font-family: "Avenir";
-  font-size: 1em;
+  font-size: 14px;
   color: rgba(0, 0, 0, .85);
 }
 
 #resume h1 {
   font-size: 2.488em;
   font-weight: 100;
-  margin: 0 0 0.335em 0;
-  padding: 0;
+  letter-spacing: 2px;
   color: rgba(0, 0, 0, .75);
 }
 
 #resume h2{
   font-weight: 200;
   font-size: 1.44em;
+  letter-spacing: 4px;
   margin: 1.2em 0 0 0;
-  color: rgba(0, 0, 0, .85);
+  /*color: rgba(0, 0, 0, .85);*/
+  color: rgba(80, 82, 144, .85);
 }
 
 #resume h3 {
@@ -135,6 +179,6 @@ table {
 }
 
 #resume em {
-  font-weight: 600;
+  font-weight: 300;
   color: rgba(0, 0, 0, .85);
 }
