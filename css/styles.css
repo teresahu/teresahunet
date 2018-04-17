@@ -56,6 +56,9 @@ em > a:visited{
   color: rgba(80, 82, 144, .8);
   text-decoration: underline;
 }*/
+body {
+  background-image: url("../images/round.png");
+}
 
 em > a {
   background-color: rgba(80, 82, 144, .8);
@@ -76,56 +79,30 @@ em > a:visited {
   padding: 0 1em;
 }
 
+.uk-navbar-nav {
+  background-color: rgba(240, 240, 240, .32);
+  cursor: none !important;
+}
+
+.uk-navbar-nav > .uk-active {
+  font-weight: 600;
+}
+
+.uk-navbar-nav > .uk-active > a:hover {
+  text-decoration: none;
+  padding-bottom: 0px;
+}
+
 .uk-navbar-nav > li > a {
   font-family: "Avenir", "Helvetica Neue", Arial, sans-serif !important;
-  color: rgba(80, 82, 144, .8) !important;
+  color: rgba(80, 82, 144, 1) !important;
 }
 
 .uk-navbar-nav > li > a:hover {
-  color: rgba(80, 82, 144, .65) !important;
-  text-decoration: line-through;
-}
-
-.ml5 {
-  position: relative;
-  font-weight: 300;
-  font-size: 4.5em;
-  color: #402d2d;
-}
-
-.ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  line-height: 1em;
-}
-
-.ml5 .line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 2px;
-  width: 100%;
-  background-color: #402d2d;
-  transform-origin: 0.5 0;
-}
-
-.ml5 .ampersand {
-  font-family: Baskerville, "EB Garamond", serif;
-  font-style: italic;
-  font-weight: 400;
-  width: 1em;
-  margin-right: -0.1em;
-  margin-left: -0.1em;
-}
-
-.ml5 .letters {
-  display: inline-block;
-  opacity: 0;
+  color: rgba(80, 82, 144, .75);
+  /*text-decoration: line-through;*/
+  text-decoration: underline;
+  padding-bottom: 1px;
 }
 
 .socialmedia {
@@ -139,9 +116,13 @@ em > a:visited {
 }
 
 #resume {
+  margin-top: -2em;
   font-family: "Avenir";
   font-size: 14px;
   color: rgba(0, 0, 0, .85);
+  background-color: #fff;
+  padding: 2.6em 0 2em 2.6em;
+  z-index: 3;
 }
 
 #resume h1 {
