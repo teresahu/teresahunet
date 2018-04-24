@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teresa Hu | Process</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/uikit.min.css" />
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+      <nav id="nav" class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+           <a href="index.html" class="uk-navbar-item uk-logo">
+             <img src="../images/logos/logo-2.png" width="48px" id="logo" alt="logo" title="logo">
+           </a>
+         </div>
+
+          <div class="uk-navbar-right">
+             <ul class="uk-navbar-nav">
+               <li><a href="../index.html">Resume</a></li>
+               <li><a href="process.html">Process</a></li>
+               <li class="uk-active"><a href="#">Case Study</a></li>
+               <!-- <li><a href="about.html">About</a></li>  -->
+             </ul>
+           </div>
+        </nav>
+
+    <div class="uk-container uk-width-5-6 work">
+      <div class="uk-width-5-6@l work uk-center uk-align-center">
+        <h1><strong>Windows Phone</strong> Remote Desktop App</h1>
+        <!-- <h2>Case Study</h2> -->
+      </div>
+
+        <div class="uk-card uk-card-default uk-align-center uk-width-4-5 uk-width-2-3@l">
+          <h2>Summary</h2>
+          <h3>Wrote the product requirements document for Microsoft's Remote Desktop app on Windows Phone. Worked cross functionally and prototyped user interactions and flows.</h3>
+
+          <h4>Team members:</h4> just me
+          <br />
+          <h4>Collaborated with:</h4> engineers, PMs, designers, researchers, users
+          <br />
+          <h4>Timeline:</h4> 12 weeks
+          <br /><br />
+          <span class="uk-badge">UX design</span>
+          <span class="uk-badge">product management</span>
+          <span class="uk-badge">prototyping</span>
+          <span class="uk-badge">use cases</span>
+          <span class="uk-badge">user research</span>
+          <span class="uk-badge">competitive analysis</span>
+          <span class="uk-badge">spec writing</span>
+        </div>
+
+      <div class="uk-width-5-6@l work uk-center uk-align-center">
+        <p>As a Program Manager Intern on the Remote Desktop team, I was the end user’s advocate. I was responsible for understanding our users, their needs, and priorities to design a great UX for the new Windows Phone app. I started off by evaluating 24 competitor remote desktop apps on Windows Phone, Android, and iOS.</p>
+        <p>Although all the apps offered remote functionality, some showed the user their desktop and some had a mouse/touch interface to control their computer from afar. I depicted this, along with app popularity and ratings, in the graphic below.</p>
+
+        <img src="../images/microsoft/compete1.png" alt="Chart of WP, Android, iPhone Remote Desktop apps">
+        <br/><br/>
+        <p>Out of those apps, I downloaded the 10 most popular apps to thoroughly analyze their functionality and UX. I documented which apps offered which specific features in a visual format (below).</p>
+
+        <img src="../images/microsoft/compete2.png" alt="Drilldown of RDP apps' features">
+
+        <p>From there, I read over 1000 app store reviews across Android, iPhone, and Windows Phone platforms. I also interviewed a few DBAs who frequently use Remote Desktop on their mobile phones. Through harnessing all of this qualitative data, I identified and prioritized 29 use cases, along with a few user scenarios.</p>
+
+        <img src="../images/microsoft/usecases.png">
+
+        <p>The data also surfaced two main pain points: it was difficult to navigate around the Desktop and enter input not built-in the Windows Phone keyboard.</p>
+
+        <p>Users could navigate two different ways: (1) use a virtual mouse or (2) use touch gestures. Most apps offered both; touch generally worked better for users.
+        </p>
+
+        <p>I prototyped how different touch gestures would work, specifically for panning, zooming, and accessing the Windows Charms Bar.</p>
+
+        <p>insert gif here</p>
+
+        <p>The second pain point occurred when users couldn’t access Ctrl, Alt, F1, etc. - keys not supported by the standard Windows Phone OS. However, a significant amount of users were power users who frequently utilize keyboard shortcuts.</p>
+
+        <p>To address entering non-standard keyboard input, I conducted a quick survey to identify which additional keys needed to be commonly accessed. Which keys supported our use cases? Turns out, the top keys were the Windows key, Ctrl, Tab, and arrow keys.</p>
+
+        <img src="../images/microsoft/keyboarduse.png">
+
+        <p>My suggestions -
+          <ul>
+            <li>Maximize visibility: 5 out of 10 existing apps waste screen space by not supporting screen rotation (portrait -> landscape mode). Avoid permanently fixed toolbars and buttons as they can block access to important controls. </li>
+            <li>Swift access: users should be able to connect quickly; barriers to connecting cause frustration and confusing. Top complaint is a laggy user experience.</li>
+            <li>Simplicity: a few instructions rather than lengthy descriptions. Minimize number of customizations in set up flow. Offer less options than on desktop- too many customizations slow down the task flow.</li>
+          </ul>
+        </p>
+
+        <p>What could be improved -
+          <ul>
+            <li>There are better methods to capture which keys are commonly used with the Remote Desktop app. Next time, I would set up keystroke logging on users machines’ and then quantitatively discover which keys are truly crucial.</li>
+          </ul>
+        </p>
+
+    </div>
+    <br/>
+  </body>
+</html>

@@ -115,7 +115,48 @@ em > a:visited {
   width: 200px;
 }
 
-#resume {
+.work > .uk-card{
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.work h1 {
+  font-size: 2.074em;
+  font-weight: 200;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, .75);
+}
+
+.work h2 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.44em;
+  margin: 1em 0 0 0;
+  color: rgba(80, 82, 144, .9);
+  display: inline-block;
+}
+
+.work h3, .uk-card h3 {
+	font-size: 1.1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+  margin: 1em 0 0 0;
+  color: rgba(0, 0, 0, .9);
+}
+
+.work h4 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	font-size: .9em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  margin: 1em 0 0 0;
+  color: rgba(0, 0, 0, .75);
+  display: inline-block;
+}
+
+.work, #resume{
   margin-top: -2em;
   font-family: "Avenir";
   font-size: 14px;
@@ -123,6 +164,29 @@ em > a:visited {
   background-color: #fff;
   padding: 2.6em 0 2em 2.6em;
   z-index: 3;
+}
+
+.work > .uk-align-center {
+  margin: 0 auto;
+}
+.uk-card {
+  font-size: 14px;
+}
+
+.uk-card > .uk-badge {
+  background-color: rgba(70, 75, 128, 1);
+  margin: .2em 0;
+  padding: 12px 8px;
+  font-size: .9em;
+}
+
+.uk-card h2 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-weight: 200;
+  font-size: 1.2em;
+  margin: 0;
+  /*color: rgba(0, 0, 0, .85);*/
+  color: rgba(80, 82, 144, .9);
 }
 
 #resume h1 {
@@ -162,4 +226,12 @@ em > a:visited {
 #resume em {
   font-weight: 300;
   color: rgba(0, 0, 0, .85);
+}
+
+#process {
+  margin: 4em 0;
+}
+
+#downloadIcon:hover {
+  fill: rgba(80, 82, 144, .9);
 }
