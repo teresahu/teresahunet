@@ -201,3 +201,7 @@ em > a:visited {
 .maxheight {
   max-height: 400px;
 }
+
+.work > section {
+  padding: .4em 0 1.2em 0;
+}
