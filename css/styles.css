@@ -100,9 +100,9 @@ em > a:visited {
 
 .uk-navbar-nav > li > a:hover {
   color: rgba(80, 82, 144, .75);
-  /*text-decoration: line-through;*/
   text-decoration: underline;
-  padding-bottom: 1px;
+  font-weight: 600;
+  /*padding-bottom: 1px;*/
 }
 
 .socialmedia {
@@ -116,44 +116,7 @@ em > a:visited {
 }
 
 .work > .uk-card{
-  padding: 1em;
-  margin-bottom: 2em;
-}
-
-.work h1 {
-  font-size: 2.074em;
-  font-weight: 200;
-  margin: 0 auto;
-  color: rgba(0, 0, 0, .75);
-}
-
-.work h2 {
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-  font-weight: 200;
-  font-size: 1.44em;
-  margin: 1em 0 0 0;
-  color: rgba(80, 82, 144, .9);
-  display: inline-block;
-}
-
-.work h3, .uk-card h3 {
-	font-size: 1.1em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 300;
-  margin: 1em 0 0 0;
-  color: rgba(0, 0, 0, .9);
-}
-
-.work h4 {
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-	font-size: .9em;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-  margin: 1em 0 0 0;
-  color: rgba(0, 0, 0, .75);
-  display: inline-block;
+  padding: 2em;
 }
 
 .work, #resume{
@@ -166,7 +129,7 @@ em > a:visited {
   z-index: 3;
 }
 
-.work > .uk-align-center {
+.work > .uk-align-center, .work > .uk-center {
   margin: 0 auto;
 }
 .uk-card {
@@ -180,23 +143,22 @@ em > a:visited {
   font-size: .9em;
 }
 
-.uk-card h2 {
+.card-title {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   font-weight: 200;
   font-size: 1.2em;
   margin: 0;
-  /*color: rgba(0, 0, 0, .85);*/
   color: rgba(80, 82, 144, .9);
 }
 
-#resume h1 {
+#resume h1, .work h1 {
   font-size: 2.488em;
   font-weight: 100;
   letter-spacing: 2px;
   color: rgba(0, 0, 0, .75);
 }
 
-#resume h2{
+#resume h2, .work h2{
   font-weight: 200;
   font-size: 1.44em;
   letter-spacing: 4px;
@@ -205,7 +167,7 @@ em > a:visited {
   color: rgba(80, 82, 144, .85);
 }
 
-#resume h3 {
+#resume h3, .work h3 {
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 	font-size: 1.2em;
 	font-style: normal;
@@ -215,7 +177,7 @@ em > a:visited {
   color: rgba(0, 0, 0, .75);
 }
 
-#resume h4 {
+#resume h4, .work h4 {
 	font-size: 0.833em;
 	font-style: normal;
 	font-weight: 100;
@@ -234,4 +196,8 @@ em > a:visited {
 
 #downloadIcon:hover {
   fill: rgba(80, 82, 144, .9);
+}
+
+.maxheight {
+  max-height: 400px;
 }

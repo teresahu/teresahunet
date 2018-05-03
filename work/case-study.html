@@ -19,8 +19,8 @@
 
           <div class="uk-navbar-right">
              <ul class="uk-navbar-nav">
-               <li><a href="../index.html">Resume</a></li>
-               <li><a href="process.html">Process</a></li>
+               <li><a href="../index.html">Résumé</a></li>
+               <!-- <li><a href="../process.html">Process</a></li> -->
                <li class="uk-active"><a href="#">Case Study</a></li>
                <!-- <li><a href="about.html">About</a></li>  -->
              </ul>
@@ -34,15 +34,14 @@
       </div>
 
         <div class="uk-card uk-card-default uk-align-center uk-width-4-5 uk-width-2-3@l">
-          <h2>Summary</h2>
-          <h3>Wrote the product requirements document for Microsoft's Remote Desktop app on Windows Phone. Worked cross functionally and prototyped user interactions and flows.</h3>
-
-          <h4>Team members:</h4> just me
+          <div class="card-title">Summary</div>
+          <p>Identified and documented Windows Phone Remote Desktop app product requirements. Worked cross functionally and prototyped user interactions and flows.</p>
+          <p>Team: I worked independently on this project.
           <br />
-          <h4>Collaborated with:</h4> engineers, PMs, designers, researchers, users
+          Collaborated with: engineers, PMs, designers, researchers, users
           <br />
-          <h4>Timeline:</h4> 12 weeks
-          <br /><br />
+          Timeline: 12 weeks
+          </p>
           <span class="uk-badge">UX design</span>
           <span class="uk-badge">product management</span>
           <span class="uk-badge">prototyping</span>
@@ -52,50 +51,93 @@
           <span class="uk-badge">spec writing</span>
         </div>
 
-      <div class="uk-width-5-6@l work uk-center uk-align-center">
-        <p>As a Program Manager Intern on the Remote Desktop team, I was the end user’s advocate. I was responsible for understanding our users, their needs, and priorities to design a great UX for the new Windows Phone app. I started off by evaluating 24 competitor remote desktop apps on Windows Phone, Android, and iOS.</p>
-        <p>Although all the apps offered remote functionality, some showed the user their desktop and some had a mouse/touch interface to control their computer from afar. I depicted this, along with app popularity and ratings, in the graphic below.</p>
+      <div class="uk-width-5-6@l work uk-center uk-align-center uk-margin-top">
+        <p>I joined the Remote Desktop team as a Program Manager Intern to own the development of a new Windows Phone app, and to be the end user’s advocate throughout the process. I was responsible for understanding different types of users, their needs, and priorities in order to design a great experience for the Windows Phone Remote Desktop app.</p>
+        <p>Remote Desktop Protocol (RDP) is a technology that enables users to control another computer from their machine. You have probably seen it commonly used for tech support; but I soon discovered that RDP supports quite a wide range of use cases.</p>
+        <p>At the time, RDP apps already existed on Windows Phone (WP), iOS, and Android platforms - however, there was no official mobile app published by Microsoft. To be aligned with the company’s mobile push, it was imperative for the company to launch an exceptional Remote Desktop experience on WP.</p>
+        <br />
+        <h2><strong>RESEARCH</strong></h2>
+        <h3>Competitive Landscape</h3>
+        <p>I started off by evaluating 24 competitor apps on Windows Phone, Android, and iOS, including popular services like Splashtop, Citrix Receiver, LogMeIn, etc. I ranked them by download count and average user rating for each platform.</p>
+        <p>All the apps offered some type of remote functionality, however, a clear distinction emerged: some apps only had a mouse/touch interface to control their computer from afar (remote control), whereas other apps showed and allowed access to the desktop (remote desktop). I depicted these differences, along with app popularity and ratings in the graphic below.</p>
 
-        <img src="../images/microsoft/compete1.png" alt="Chart of WP, Android, iPhone Remote Desktop apps">
-        <br/><br/>
-        <p>Out of those apps, I downloaded the 10 most popular apps to thoroughly analyze their functionality and UX. I documented which apps offered which specific features in a visual format (below).</p>
+        <div uk-lightbox>
+          <a href="../images/microsoft/research1.png" title="Competitive Landscape"><img src="../images/microsoft/research1.png" alt="Chart of WP, Android, iPhone Remote Desktop apps"></a>
+        </div>
+        <br/>
+        <h3>Competitive Analysis</h3>
+        <p>Out of the 24 apps, I downloaded the 10 most popular ones to thoroughly evaluate their features and flows. I visually coded what apps offered specific features in a spreadsheet (below). From this chart, it was clear that the Remote Desktop app landscape is highly fragmented. The main commonalities included Gestures, Touch, Clipboard, Keyboard Toggling, Sound Redirection, and Performance Settings. I followed up with engineering to confirm that we can support the technical features; later on, I dove deeper into Gestures, Touch, and Keyboard Toggling interactions with the UX team.</p>
 
-        <img src="../images/microsoft/compete2.png" alt="Drilldown of RDP apps' features">
+        <div uk-lightbox>
+        <a href="../images/microsoft/compete2.png" title="Competitive Analysis"><img src="../images/microsoft/compete2.png" alt="Drilldown of RDP apps' features" /></a>
+        </div>
+        <br/>
+        <h3>Internal Ecosystem</h3>
+        <p>After gathering external information, it was time to look inwards at what internal landscape the RDP app would be brought to life in. I read as many specs as I could get my hands on, for a more comprehensive understanding of Microsoft’s remote product offerings.</p>
+        <p>At the time, two of the team’s top OKRs were (1) to align with the Microsoft Metro design system, and (2) to move into the cloud space with Azure RemoteApp. I made sure to review the Metro framework, especially its design patterns and touch gestures.</p>
+        <br />
+        <h3>Personas & Scenarios</h3>
+        <p>From there, I read over 1,000 app store reviews across Android, iPhone, and Windows Phone platforms. I also interviewed a few internal users who frequently use Remote Desktop on their mobile phones. Two primary personas emerged from this exploration: Claire, the IT Administrator, and Phil, an employee on-the-go.</p>
+        <p>I developed a few scenarios for each persona, in order to capture a fuller picture of how their individual personalities shape their usage of RDP. </p>
 
-        <p>From there, I read over 1000 app store reviews across Android, iPhone, and Windows Phone platforms. I also interviewed a few DBAs who frequently use Remote Desktop on their mobile phones. Through harnessing all of this qualitative data, I identified and prioritized 29 use cases, along with a few user scenarios.</p>
+        <div uk-lightbox>
+        <a href="../images/microsoft/userscenarios.png"><img src="../images/microsoft/userscenarios.png" /></a>
+        </div>
+        <br />
 
-        <img src="../images/microsoft/usecases.png">
+        <h3>Use Cases</h3>
+        <p>Through harnessing all of the qualitative data I described above, I identified 29 use cases. By reading previous RDP specifications, I had a sense of the prioritization of my use cases. I reached out to other PMs on the team to confirm my ordering of use cases into P0-P3 and out-of-scope levels of importance.</p>
+        <p>Prioritization of use cases was especially critical in my process. My challenge was to decide which features we could support on a mobile device. The original RDP application was very powerful and used by a wide audience; it offered a slew of custom settings and integrations. The mobile app couldn’t be as fully fledged due to its mobile form factor - constraints like processing power, a smaller screen, etc. meant that the Windows Phone app would be a watered down version of the desktop application.</p>
 
-        <p>The data also surfaced two main pain points: it was difficult to navigate around the Desktop and enter input not built-in the Windows Phone keyboard.</p>
+        <div uk-lightbox>
+        <a href="../images/microsoft/usecases.png"><img src="../images/microsoft/usecases.png" /></a>
+        </div>
 
-        <p>Users could navigate two different ways: (1) use a virtual mouse or (2) use touch gestures. Most apps offered both; touch generally worked better for users.
-        </p>
+        <h3>Data Analysis</h3>
+        <p>After reading the 1,000 app store reviews, I exported them into a spreadsheet to quantitatively analyze the data. I wanted to uncover the most prevalent pain points, so I generated a word frequency list to see what users mention the most often. Common words like “the”, “and”, “to”, etc. were filtered out.</p>
+        <p>This method surfaced a series of pain points in existing RDP apps that I illustrate in the Design section below.</p>
+        <p>In the comments, I noticed that a rampant request was for access to non-standard keys like Ctrl, Tab, Arrow keys, etc. that were not available in the built-in Windows Phone keyboard. This was puzzling to me - why someone need those keys on a mobile phone? To find out, I set up a survey to reveal the reasoning behind this user need.</p>
 
-        <p>I prototyped how different touch gestures would work, specifically for panning, zooming, and accessing the Windows Charms Bar.</p>
+        <br/>
+        <h3>Survey on Keyboard Button Usage</h3>
+        <p>I conducted a quick survey with 40 RDP users; the goal was to identify what keys they press most often when connecting to a remote machine, and for what reasons.</p>
+        <p>It turned out that a significant amount of users were power users who frequently program their own keyboard shortcuts. The most frequently utilized keys were the Windows key, Ctrl, Tab, and Arrow keys. Below, you can see the 7 responses out of 40 surveys.</p>
+        <div uk-lightbox>
+        <a href="../images/microsoft/keyboarduse.png"><img src="../images/microsoft/keyboarduse.png"></a>
+        </div>
+        <p>I dive deeper into an exploration of how non-standard keys can be accessible in the Design section below.</p>
+        <br />
 
-        <p>insert gif here</p>
+        <h2><strong>RESEARCH TAKEAWAYS</strong></h3>
+        <h3>Recommendations</h3>
+        <p>My analysis of the qualitative and quantitative data around RDP mobile apps culminated in the following recommendations for the design phase of this project.</p>
+        <ul>
+          <li><strong>Maximize visibility:</strong> Five out of ten existing apps waste screen space by not supporting screen rotation from portrait to landscape mode. Avoid permanently fixed toolbars and buttons as they can block access to important controls. </li><br/>
+          <li><strong>Swift access:</strong> Users should be able to connect quickly; barriers to connecting cause frustration and confusion. The top complaint is a laggy user experience.</li><br/>
+          <li><strong>Simplicity:</strong> Limit the onboarding to a few visual instructions rather than lengthy descriptions. Minimize number of custom settings in the set-up flow and offer fewer options than desktop RDP; too many customizations slow down the task flow.</li>
+        </ul>
+        <br />
 
-        <p>The second pain point occurred when users couldn’t access Ctrl, Alt, F1, etc. - keys not supported by the standard Windows Phone OS. However, a significant amount of users were power users who frequently utilize keyboard shortcuts.</p>
+        <h3>Future Improvements</h3>
+        <p>There are more accurate methods to capture which keys are most frequently utilized with Remote Desktop. Next time, I would set up keystroke logging on users’ machines and then determine which keys are truly crucial quantitatively.</p>
+        <br />
+        <h2><strong>DESIGN</strong></h2>
+        <p>Generating a word frequency list from the 1,000 reviews surfaced five areas of friction in existing RDP apps: (1) browsing the file system, (2) accessing the keyboard, (3) accessing buttons/app bar, (4) ambiguous touch gestures, and (5) navigating windows. I decided to do a deep dive into each of these interactions. I ideated and prototyped UIs to show the team how these areas could be improved.</p>
+        <p>For each prototype, I requested feedback from UX researchers, designers, engineers, and other PMs. Incorporating their insights into my research, I iterated on the designs to create the UIs you see below.</p>
 
-        <p>To address entering non-standard keyboard input, I conducted a quick survey to identify which additional keys needed to be commonly accessed. Which keys supported our use cases? Turns out, the top keys were the Windows key, Ctrl, Tab, and arrow keys.</p>
-
-        <img src="../images/microsoft/keyboarduse.png">
-
-        <p>My suggestions -
-          <ul>
-            <li>Maximize visibility: 5 out of 10 existing apps waste screen space by not supporting screen rotation (portrait -> landscape mode). Avoid permanently fixed toolbars and buttons as they can block access to important controls. </li>
-            <li>Swift access: users should be able to connect quickly; barriers to connecting cause frustration and confusing. Top complaint is a laggy user experience.</li>
-            <li>Simplicity: a few instructions rather than lengthy descriptions. Minimize number of customizations in set up flow. Offer less options than on desktop- too many customizations slow down the task flow.</li>
-          </ul>
-        </p>
-
-        <p>What could be improved -
-          <ul>
-            <li>There are better methods to capture which keys are commonly used with the Remote Desktop app. Next time, I would set up keystroke logging on users machines’ and then quantitatively discover which keys are truly crucial.</li>
-          </ul>
-        </p>
-
+        <h3>File System Browser</h3>
+        <p>With existing RDP apps, it is incredibly difficult to navigate a remote PC’s file system. Imagine a desktop PC’s screen - usually more than 17 inches - scaled down to a 5.5 inch phone screen. The user must be able to utilize the desktop UI, which has small touch targets, and this often results inaccurate selections.</p>
+        <p>Instead, I proposed allowing the user to directly navigate the file system in a mobile interface. Working with engineers, we could extrapolate that data to an interface with larger touchpoints.</p>
+        <p>In the animation, the user uses the long press gesture on a particular connection to access the PC’s file structure.</p>
+        <div uk-lightbox>
+        <a href="../images/microsoft/filesystem.gif"><img src="../images/microsoft/filesystem.gif" class="maxheight"></a>
+        </div>
+        <br />
+        <h4>Apologies! You have reached the end of my in-progress portfolio. <br />I'd love to tell you more about my work; contact me: <strong>teresa [at] teresahu [dot] net</strong>.</h4>
     </div>
     <br/>
+    <div class="uk-flex uk-flex-center">
+      <a href="#logo" class="uk-position-medium uk-position-absolute" uk-scroll uk-totop> </a>
+    </div>
   </body>
 </html>
