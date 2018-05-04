@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Teresa Hu | Process</title>
+        <title>Teresa Hu | Case Study | Microsoft</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/styles.css" />
@@ -17,15 +17,25 @@
            </a>
          </div>
 
-          <div class="uk-navbar-right">
-             <ul class="uk-navbar-nav">
-               <li><a href="../index.html">Résumé</a></li>
-               <!-- <li><a href="../process.html">Process</a></li> -->
-               <li class="uk-active"><a href="#">Case Study</a></li>
-               <!-- <li><a href="about.html">About</a></li>  -->
-             </ul>
-           </div>
-        </nav>
+         <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li><a href="../index.html">Résumé</a></li>
+              <li>
+                <a class="parent" href="#">Work</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <!-- <li><a href="">Mulesoft</a></li> -->
+                    <li><a href="elliemae.html">EllieMae</a></li>
+                    <li><a href="GE.html">GE</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li><a href="process.html">Process</a></li> -->
+              <li class="uk-active"><a href="#">Case Study</a></li>
+              <!-- <li><a href="about.html">About</a></li>  -->
+            </ul>
+          </div>
+       </nav>
 
     <div class="uk-container uk-width-5-6 work">
       <div class="uk-width-5-6@l work uk-center uk-align-center">
@@ -186,10 +196,20 @@
 
         <section>
           <h3>Gesture Disambiguation</h3>
+          <p>The most complex design problem that I faced in this project involved touch gestures. There was a lot of ambiguity in determining which gestures would map to which operations. This was caused by the fact that a mobile Remote Desktop app has a desktop interface embedded in a phone’s interface.</p>
+          <p>For instance, how would we delineate between scrolling and panning? The touch gesture is the same for both, so the user must have a way to express his or herintent. Below are two designs that would map to an understandable mental model - the user could toggle navigation mode on and off to avoid confusion. Other possibilities I considered included using the phone’s hardware (gyroscope) to pan or scroll.</p>
+          <div uk-lightbox>
+            <a href="../images/microsoft/gesture.png"><img src="../images/microsoft/gesture.png" class="maxheight"></a>
+          </div>
+          <br/>
+          <p>Distinguishing between a remote pinch-to-zoom versus a local pinch-to-zoom was equally perplexing. How would the user communicate whether they wanted to zoom the entire desktop, or just the contents of one window on their desktop?</p>
+          <br/>
+          <div uk-lightbox>
+            <a href="../images/microsoft/pinchtozoom.gif"><img src="../images/microsoft/pinchtozoom.gif"></a>
+          </div>
         </section>
 
-        <br /><br />
-        <h4>Apologies! You have reached the end of my in-progress portfolio. <br />I'd love to tell you more about my work; contact me: <strong>teresa [at] teresahu [dot] net</strong>.</h4>
+        <!-- <h4>Apologies! You have reached the end of my in-progress portfolio. <br />I'd love to tell you more about my work; contact me: <strong>teresa [at] teresahu [dot] net</strong>.</h4> -->
     </div>
 
     <div class="uk-flex uk-flex-center">

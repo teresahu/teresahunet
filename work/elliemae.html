@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teresa Hu | Work | EllieMae</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/uikit.min.css" />
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+      <nav id="nav" class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+           <a href="index.html" class="uk-navbar-item uk-logo">
+             <img src="../images/logos/logo-2.png" width="48px" id="logo" alt="logo" title="logo">
+           </a>
+         </div>
+
+         <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li><a href="../index.html">Résumé</a></li>
+              <li class="uk-active">
+                <a class="parent" href="#">Work</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <!-- <li><a href="">Mulesoft</a></li> -->
+                    <li><a href="#">EllieMae</a></li>
+                    <li><a href="GE.html">GE</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li><a href="process.html">Process</a></li> -->
+              <li><a href="case-study.html">Case Study</a></li>
+              <!-- <li><a href="about.html">About</a></li>  -->
+            </ul>
+          </div>
+       </nav>
+
+    <div class="uk-container uk-width-5-6 work">
+      <div class="uk-width-5-6@l work uk-center uk-align-center">
+        <h1><strong>EllieMae Encompass</strong> NextGen Prototype</h1>
+        <!-- <h2>Case Study</h2> -->
+      </div>
+
+        <div class="uk-card uk-card-default uk-align-center uk-width-4-5 uk-width-2-3@l">
+          <div class="card-title">Summary</div>
+          <p>Understand how mortgage loan officers use Encompass throughout the loan process, identify pain points, propose new designs, and discover which is design the best for users.</p>
+          <p>Team: me & a principal designer
+          <br />
+          Collaborated with: engineers, PMs, designers, researchers, users
+          <br />
+          Timeline: 20 days
+          </p>
+          <span class="uk-badge">interaction design</span>
+          <span class="uk-badge">prototyping</span>
+          <span class="uk-badge">CSS3 animations</span>
+        </div>
+
+      <div class="uk-width-5-6@l work uk-center uk-align-center uk-margin-top">
+      <section>
+        <p>I joined this project in its final phase of the design process: prototyping. We started off with knowledge transfer, a deep dive into the world of mortgage loan officers. The principal designer shared his insights and mockups with me, and together we came up with ways to enhance the overall user experience of mortgage loan application software. </p>
+        <p>The mortgage loan application process requires filling out pages and pages of forms. Based on previous user research, loan officer productivity was impeded by to confusing navigation and long scrolling pages. To address this, we prioritized (1) making the navigation flow clear and (2) helping users stay focused on form pages.</p>
+        <p>Animations can be really helpful affordances for users to stay focused. In a few hours, I created <a href="http://headerama.bitballoon.com/">this demo</a> to show an example of this.</p>
+        <div uk-lightbox>
+          <a href="../images/elliemae/headerama2.gif" title="Headerama"><img src="../images/elliemae/headerama2.gif"></a>
+        </div>
+      </section>
+      <br/>
+
+      <section>
+        <p>Another example of how animation and color can help the mortgage loan officer keep track of where he or she is on the page. The form field expands in size and has a focus state outline when active.</p>
+        <div uk-lightbox>
+          <a href="../images/elliemae/murderout.gif" title="Headerama"><img src="../images/elliemae/murderout.gif"></a>
+        </div>
+      </section>
+      <br />
+
+      <section>
+        <p>The most challenging problem I had to solve throughout this project: how will the loan officer know when his input is part of a larger system and it affects the overall mortgage application?</p>
+        <p>Some sort of indication would be necessary. Keeping in mind our goal was to help the user focus, a slight signal would be ideal. Enough to be noticed in one’s peripheral vision, but not so much movement that it draws full attention. </p>
+        <p>The appropriate application of a subtle animation can signal change without distracting user from their task at hand. Inspired by stock ticker prices changing, I created light blue highlights that animate whenever the loan officers enters input that affects the mortgage application. <a href="http://blueout.bitballoon.com/1003.html">Check it out</a> below.</p>
+        <div uk-lightbox>
+          <a href="../images/elliemae/blueout2.gif" title="Headerama"><img src="../images/elliemae/blueout2.gif"></a>
+        </div>
+        <br />
+        <p>Because my deliverables were created in HTML, CSS, and JavaScript, EllieMae’s engineering team will be able to use the animation code directly in the final product. The interactive prototype is functional and ready for user testing. </p>
+      </section>
+        <!-- <h4>Apologies! You have reached the end of my in-progress portfolio. <br />I'd love to tell you more about my work; contact me: <strong>teresa [at] teresahu [dot] net</strong>.</h4> -->
+    </div>
+
+    <div class="uk-flex uk-flex-center">
+      <a href="#logo" class="uk-position-medium uk-position-absolute" uk-scroll uk-totop> </a>
+    </div>
+  </body>
+</html>
