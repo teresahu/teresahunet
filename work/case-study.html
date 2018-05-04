@@ -111,7 +111,7 @@
         <section>
           <h3>Survey on Keyboard Button Usage</h3>
           <p>I conducted a quick survey with 40 RDP users; the goal was to identify what keys they press most often when connecting to a remote machine, and for what reasons.</p>
-          <p>It turned out that a significant amount of users were power users who frequently program their own keyboard shortcuts. The most frequently utilized keys were the Windows key, Ctrl, Tab, and Arrow keys. Below, you can see the 7 responses out of 40 surveys.</p>
+          <p>It turned out that a significant amount of users were power users who frequently program their own keyboard shortcuts. For example, one power user programmed Shift+Ctrl+3 to perform three different tasks at once. It was a very clever way to maximize productivity using RDP. The most frequently utilized keys were the Windows key, Ctrl, Tab, and Arrow keys. Below, you can see the 7 responses out of 40 surveys.</p>
           <div uk-lightbox>
           <a href="../images/microsoft/keyboarduse.png"><img src="../images/microsoft/keyboarduse.png"></a>
           </div>
@@ -137,7 +137,7 @@
 
         <h2>DESIGN</h2>
         <section>
-          <p>Generating a word frequency list from the 1,000 reviews surfaced five areas of friction in existing RDP apps: (1) browsing the file system, (2) accessing the keyboard, (3) accessing buttons/app bar, (4) ambiguous touch gestures, and (5) navigating windows. I decided to do a deep dive into each of these interactions. I ideated and prototyped UIs to show the team how these areas could be improved.</p>
+          <p>Generating a word frequency list from the 1,000 reviews surfaced five areas of friction in existing RDP apps: (1) browsing the file system, (2) navigating windows, (3) accessing the keyboard, (4) accessing buttons/app bar, and (5) ambiguous touch gestures. I decided to do a deep dive into each of these interactions. I ideated and prototyped UIs to show the team how these areas could be improved.</p>
           <p>For each prototype, I requested feedback from UX researchers, designers, engineers, and other PMs. Incorporating their insights into my research, I iterated on the designs to create the UIs you see below.</p>
         </section>
 
@@ -147,9 +147,47 @@
           <p>Instead, I proposed allowing the user to directly navigate the file system in a mobile interface. Working with engineers, we could extrapolate that data to an interface with larger touchpoints.</p>
           <p>In the animation, the user uses the long press gesture on a particular connection to access the PC’s file structure.</p>
           <div uk-lightbox>
-          <a href="../images/microsoft/filesystem.gif"><img src="../images/microsoft/filesystem.gif" class="maxheight"></a>
+            <a href="../images/microsoft/filesystem.gif"><img src="../images/microsoft/filesystem.gif" class="maxheight"></a>
           </div>
         </section>
+
+        <section>
+          <h3>Navigating & Closing Windows</h3>
+          <p>Like accessing the remote PC’s filesystem, this task is similarly challenging in that it involves very small touch targets that can lead to erroneous operations. Switching between windows and closing them is such a common task flow - I wanted to simplify it, especially since I had confirmation that it was technically feasible.</p>
+          <div uk-lightbox>
+            <a href="../images/microsoft/closingwindows.png"><img src="../images/microsoft/closingwindows.png"></a>
+          </div>
+        </section>
+
+        <section>
+          <h3>Keyboard</h3>
+          <p>Remember the survey I conducted on non-standard keyboard button usage? The results made it clear that we must support the subgroup of power users who utilize the Windows key, Ctrl, Alt, Tab, etc. regularly.</p>
+          <p>Ideally, these additional keys will be easily accessible from the built-in keyboard, but also hideable when not needed. I recommended the design below.</p>
+          <div uk-lightbox>
+            <a href="../images/microsoft/keyrow.gif"><img src="../images/microsoft/keyrow.gif" class="maxheight"></a>
+          </div>
+          <p>Another design challenge around the keyboard was figuring out a way to seamlessly open and close it. A prevailing complaint in the app store reviews was that accessing the keyboard was tenuous. </p>
+          <p>In Android, when the keyboard is opened, there is a down arrow in the bottom bar that closes the keyboard when tapped. This bottom bar didn’t exist in the Windows Phone design pattern, so I needed to come up with alternative solutions. As the keyboard must be accessed by a button, my exploration of these designs are included in the next section.</p>
+        </section>
+
+        <section>
+          <h3>App Bar & Buttons</h3>
+          <p>It was important to ideate interactions around buttons because that will be the primary way users complete tasks in the RDP app. My main goal was to make the buttons accessible,but not fixed on the screen taking up precious real estate. Also, the buttons should be labeled and not ambiguous so users understand what actions are available.</p>
+          <div uk-lightbox>
+            <a href="../images/microsoft/keyboard1.png"><img src="../images/microsoft/keyboard1.png" class="maxheight"></a>
+          </div>
+          <div uk-lightbox>
+            <a href="../images/microsoft/keyboard2.png"><img src="../images/microsoft/keyboard2.png" class="maxheight"></a>
+          </div>
+          <div uk-lightbox>
+            <a href="../images/microsoft/keyboard3.gif"><img src="../images/microsoft/keyboard3.gif" class="maxheight"></a>
+          </div>
+        </section>
+
+        <section>
+          <h3>Gesture Disambiguation</h3>
+        </section>
+
         <br /><br />
         <h4>Apologies! You have reached the end of my in-progress portfolio. <br />I'd love to tell you more about my work; contact me: <strong>teresa [at] teresahu [dot] net</strong>.</h4>
     </div>
