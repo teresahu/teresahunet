@@ -172,7 +172,7 @@ em > a:visited {
 	font-size: 1.2em;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: 200;
   margin: 1em 0 0 0;
   color: rgba(0, 0, 0, .75);
 }
@@ -204,4 +204,18 @@ em > a:visited {
 
 .work > section {
   padding: .4em 0 1.2em 0;
+}
+
+.work {
+  min-width: 400px;
+  min-height: 1000px;
+}
+
+.overlay {
+  padding: 10px;
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
